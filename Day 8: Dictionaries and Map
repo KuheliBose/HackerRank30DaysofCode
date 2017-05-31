@@ -1,0 +1,39 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+#include <map>
+using namespace std;
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    std::map<string,int> phoneBook;
+    int n;
+    cin >> n;
+    for(int i= 0; i<n; i++)
+        {
+        string name;
+        cin >> name;
+        
+        if(!phoneBook[name]){
+            cin >> phoneBook[name];
+        }
+    }
+    
+    for(int i = 0; i<n; i++)
+        {
+        string name;
+        cin>> name;
+        
+        if(phoneBook[name])
+            {
+            cout<< name << "="<< phoneBook[name]<< endl;
+        }
+        else{
+            cout << "Not found"<<endl;
+        }
+    }
+    return 0;
+}
