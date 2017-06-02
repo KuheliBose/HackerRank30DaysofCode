@@ -40,7 +40,7 @@ int main(){
    	int count1=0;
    	for (int j=0 ; j<bin.size() ; ++j) {
    		if (bin.at(j)==1) {
-            count1 ++;
+                count1 ++;
             
             if(count1 > max )
                 max = count1;
